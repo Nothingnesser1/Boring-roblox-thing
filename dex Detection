@@ -1,0 +1,21 @@
+-- by chatgpt cool roblox simple code
+
+do
+    if(game:GetService('RunService'):IsClient())then
+        task.spawn(function()
+            while 0 do task.wait(1e-1)
+                for _,v in {'HSRDataContentProvider'} do
+                    local b=game:GetService(v)
+                    local w=setmetatable({b,['🐱']=newproxy(true)},{ __mode='v'})
+                    b=nil
+                    repeat task.wait() until not(w['🐱'])
+                    if next(w) then
+                        while 0 do task.wait()
+                            game:GetService('StarterGui'):SetCore('DevConsoleVisible',true)print'Meowww'
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end
